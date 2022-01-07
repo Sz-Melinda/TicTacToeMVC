@@ -1,0 +1,53 @@
+:root {
+    --maxSzelesseg: 300px;
+    --szelesseg: calc((var(--maxSzelesseg) - 10px) / 3);
+}
+* {
+    box-sizing: border-box;
+}
+main {
+    width: var(--maxSzelesseg);
+    margin: auto;
+}
+
+article {
+    display: grid;
+    grid-template-columns: var(--szelesseg) var(--szelesseg) var(--szelesseg);
+    grid-template-rows: var(--szelesseg) var(--szelesseg) var(--szelesseg);
+    grid-gap: 5px;
+}
+article div {
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: calc(var(--szelesseg) * 4 / 5);
+    text-align: center;
+    vertical-align: middle;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+article div p {
+    padding: 0;
+    margin: 0;
+}
+.elem:hover {
+    cursor: grab;
+    background-color: rgb(193, 199, 186);
+}
+footer {
+    text-align: center;
+}
+section p,
+form {
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.kovetkezoJatekos {
+    color: green;
+    font-weight: bold;
+}
+.jatekvege {
+    color: blueviolet;
+    font-size: 20px;
+}

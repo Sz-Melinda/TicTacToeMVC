@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+
+<html lang="hu">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>TicTacToe</title>
+
+        <link rel="stylesheet" href="stilus.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <script src="Model/tictactoeModel.js"></script>
+        <script src="View/tictactoeView.js"></script>
+        <script src="Controller/tictactoeController.js"></script>
+        <script src="main.js"></script>
+
+
+    </head>
+
+    <body>
+        <main>
+
+            <section>
+
+                <form>
+
+                    <label for="xNev"> X játékos </label>
+                    <input type="text" name="xNev" id="xNev">
+
+                    <label for="oNev"> O játékos </label>
+                    <input type="text" name="oNev" id="oNev">
+
+                </form>
+
+                <p class="kovetkezoJatekos"></p>
+                <p class="jatekVege"></p>
+                <button id="ujJatek">Új játék</button>
+
+            </section>
+
+            <article></article>
+
+            <footer><p>Szikora Melinda</p></footer>
+
+        </main>
+    </body>
+
+</html>
